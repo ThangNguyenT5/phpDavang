@@ -1,0 +1,103 @@
+/* PC > PC low resolution < 1024px & < 1239px */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .content__service-item{
+        margin: 8px 0;
+    }
+    
+    .footer {
+        margin: unset;
+    }
+    .footer.row {
+        margin: 0 8px;
+        margin-top: var(--header-height);
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header__navbar-mobile {
+        display: flex;
+    }
+    .content__about {
+        margin-top: -9px;
+    }
+    .content__about--heading {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 8px 0;
+    }
+    .content__about--text {
+        padding-top: 10px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .header__navbar-list {
+        display: block;
+        position: fixed;
+        min-width: var(--navbar-min-width);
+        background-color: #FFF;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        /* animation: slideIn linear 0.2s; */
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform linear 0.2s, opacity linear 0.2s;
+    }
+    .footer {
+        margin: unset;
+    }
+    .footer.row {
+        margin: 0 8px;
+        margin-top: var(--header-height);
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .content__service-item{
+        margin: 8px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    .header__logo {
+        margin-left: 8px;
+    }
+    .header__navbar-list{
+        min-width: calc(var(--navbar-min-width) - 50px);
+    }
+    .content__about.row{
+        flex-direction: column-reverse;
+    }
+    .content__about-header {
+        margin: 0 8px;
+    }
+    .content__about--heading,
+    .content__about--text {
+        margin: unset;
+    }
+    .content__about--heading {
+        padding-top: 16px;
+    }
+
+    .content__about-img{
+        padding-top: 100%;
+    }
+    .content__service-item{
+        margin: 4px 0;
+    }
+    .content__service-project {
+        margin: 0 -10px;
+    }
+}

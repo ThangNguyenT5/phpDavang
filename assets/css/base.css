@@ -1,0 +1,52 @@
+/* reset Css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Georgia', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main {
+    overflow: hidden;
+}
+
+/* Var */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #c7935a;
+    --border-color: #ccc;
+    --header-height: 50px;
+    --navbar-min-width: 300px;
+}
+
+/* Animation */
+@keyframes opacityUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
